@@ -88,19 +88,7 @@ If you are fuzzing a local application, you may want to execute `system-config` 
 
 Running `./frida-fuzzer -spawn ./tests/test_linux64` you will see something like the following status screen on your terminal:
 
-```
- |=---------------=[ frida-fuzzer ]=---------------=|
-   target app       : ./tests/test_linux64
-   output folder    : /tmp/frida_fuzz_out_e_bv_oq3
-   uptime           : 0h-0m-1s
-   last path        : 0h-0m-1s
-   queue size       : 3
-   last stage       : havoc
-   current testcase : 2
-   total executions : 28591
-   execution speed  : 20007/sec
- |=------------------------------------------------=|
-```
+![screen](assets/screen.png)
 
 You can also easily add a custom stage in `fuzz/fuzzer.js` and add it to the stages list in `fuzz/index.js`.
 
